@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <p class="js-display result">1+</p>
+
+    <p>
+        <button class="num-btn" onclick="updatecalculation('1')">1</button>
+        <button class="num-btn" onclick="updatecalculation('2')">2</button>
+        <button class="num-btn" onclick="updatecalculation('3')">3</button>
+        <button class="sign-btn" onclick="updatecalculation('+')">+</button>
+    </p>
+    <p>
+        <button class="num-btn" onclick="updatecalculation('4')">4</button>
+        <button class="num-btn" onclick="updatecalculation('5')">5</button>
+        <button class="num-btn" onclick="updatecalculation('6')">6</button>
+        <button class="sign-btn" onclick="updatecalculation('-')">-</button>
+    </p>
+    <p>
+        <button class="num-btn" onclick="updatecalculation('7')">7</button>
+        <button class="num-btn" onclick="updatecalculation('8')">8</button>
+        <button class="num-btn" onclick="updatecalculation('9')">9</button>
+        <button class="sign-btn" onclick="updatecalculation( '*')">*</button>
+    </p>
+    <p>
+        <button class="num-btn" onclick="updatecalculation('0')">0</button>
+        <button class="num-btn" onclick="updatecalculation('.')">.</button>
+
+        <button class="num-btn" onclick="operations()">=</button>
+        <button class="sign-btn" onclick="updatecalculation(' / ')">/</button>
+    </p>
+
+    <p class="row">
+        <button class="clear-btn" onclick="clearcal()">Clear</button>
+        <button onclick="remove()" class="js-remove sign-btn"><img class="clr-btn" src="./icons8-clear-symbol-100.png"></button>
+    </p>
+
+
+
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
